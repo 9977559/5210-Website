@@ -1,0 +1,10 @@
+.h1{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.img{
+    margin-left: auto;
+    width: 50px;
+}
