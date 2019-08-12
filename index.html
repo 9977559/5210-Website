@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="/css/style.css" type="text.css"> -->
     <title>Basic</title>
     <style>
@@ -18,36 +18,45 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-align: center;
     }
-    .item2{
+    .nav{
         text-align: center;
         font-family: 'Dosis', sans-serif;
-        background: gray;
+        /* background: gray; */
         text-decoration-color: chocolate;
         grid-column-start: 1;
         grid-column-end: 4;
+
     }
+    .nav a{
+        text-decoration: none;
+        margin-right: 15px;   }
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  background-color: gray;
+  background-color: #eee;
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
 
-.item1 {
+.header {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
-     
-    background:gainsboro;
-    font-family: cubic;
+  height: 150px;
+  font-family: 'Libre Caslon Display', serif;
+  font-size: 600px;
+  
+}
+.header h1 {
+    align-self: start;
+    font-size: 100px;
 }
     
     </style>
@@ -55,18 +64,19 @@
 <body>
         <div class="grid-container">
   
-            <div class="item1">  
+            <div class="header">  
                 <h1>
-                    This Is My Homepage On GitHub.
+                    Daniel Hollander
                 </h1>
             </div>
-            <div class="item2"> 
+            <div class="nav"> 
                 <nav>
                     <a href="index.html">Home</a>
-                    <a href="md_page.md">Markdown page   </a>
-                    <a href="page2.html">Page 2</a>
-                    <a href="page3.html">Page 3</a>
-                    <a href="page4.html">Page 4</a>
+                    <a href="md_page.md">MD page</a>
+                    <a href="page2.html">Image wrap</a>
+                    <a href="page3.html">Bootstrap</a>
+                    <a href="page4.html">Flex Box</a>
+                    <a href="page5.html">Css Grids</a>
                 </nav>
             </div>
             <div class="item3">
@@ -81,8 +91,8 @@
             <div class="item6">
                 <img width="200px" src="https://cdn.worldvectorlogo.com/logos/javascript.svg">
             </div>
-            <div class="item7">7</div>
-            <div class="item8">8</div>  
+            <div class="item7"><img src="http://placekitten.com/400/400"></div>
+            <div class="item8"><img src="http://placekitten.com/400/300"></div>  
           
           </div>
           
